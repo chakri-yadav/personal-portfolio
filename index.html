@@ -212,12 +212,26 @@
   const form = document.forms['contact'];
   const msg = document.getElementById("msg");
 
-  form.addEventListener('submit', function () {
-    msg.innerHTML = "Message sent successfully!";
-    setTimeout(() => {
-      msg.innerHTML = "";
-      form.reset();
-    }, 4000);
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Stop default form submission
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      msg.innerHTML = "Message sent successfully!";
+      setTimeout(() => {
+        msg.innerHTML = "";
+        form.reset();
+      }, 4000);
+    })
+    .catch(error => {
+      msg.innerHTML = "Something went wrong. Please try again!";
+      console.error('Form submission error:', error);
+    });
   });
 </script>
 </body>
