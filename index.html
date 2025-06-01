@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chakravarthi Nukala Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+          <img src="images/Programmer-PNG-Photo-Image.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Chakravarthi</span></h1><h2><p>Every bug I fix teaches me</p><p>something I didn’t know</p><p> I needed to learn.</p></h2>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/MyUser_Pic.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Chakravarthi Nukala, a software engineer with 2 years of experience building full-stack web applications using Django, React, and AWS. I specialize in designing scalable backend systems, developing robust REST APIs, and integrating PostgreSQL databases in production environments.</p>
+                <p>With a strong foundation in CI/CD automation, Docker, and cloud deployment, I enjoy delivering clean, maintainable code that performs at scale. I’ve contributed to agile teams, mentored interns, and deployed high-uptime systems that power real-world solutions.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Engineering</span><br>OOP, Git, Agile, clean code, modular architecture, version control</li>
+                        <li><span>Full-Stack Web Development</span><br>Django, React, REST APIs, PostgreSQL, JWT, RBAC, full-stack app integration</li>
+                        <li><span>Cloud Deployment & Automation</span><br>Docker, GitHub Actions, AWS (EC2, S3, RDS), CI/CD workflows, containerized deployment</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+    <ul>
+        <li>
+            <span>Dec 2023 – May 2025</span><br>
+            <strong>Student Worker at Eastern Illinois University</strong><br>
+            Managed 600+ daily meal transactions using campus dining systems. Collaborated with backend teams to maintain real-time data sync and ensured minimal downtime during peak hours.
+        </li>
+        <li>
+            <span>May 2022 – July 2023</span><br>
+            <strong>Junior Software Engineer at Brillquest Technologies</strong><br>
+            Extended Django REST APIs with batch updates and filtering, reducing API load by 40%. Built reusable React components, deployed full-stack apps on AWS, and automated CI/CD using GitHub Actions.
+        </li>
+        <li>
+            <span>Aug 2021 – Apr 2022</span><br>
+            <strong>Software Engineer Intern at Brillquest Technologies</strong><br>
+            Developed authentication flows with Django REST, modular React forms, and a Python CLI for test data generation. Improved QA efficiency through logging and GitHub Actions automation.
+        </li>
+    </ul>
+</div>
+
+                <div class="tab-contents" id="education">
+    <ul>
+        <li>
+            <span>2025</span><br>
+            <strong>Eastern Illinois University</strong><br>
+            Master's in Computer Technology  
+            <br>Relevant Courses: Web Technology & Multimedia, Cloud Computing, Java in Technology, Database Security & Reliability, Computer Networking.
+        </li>
+        <li>
+            <span>2022</span><br>
+            <strong>Jawaharlal Nehru Technological University Hyderabad (JNTUH)</strong><br>
+            B.Tech in Information Technology  
+            <br>Relevant Courses: Data Structures & Algorithms, Operating Systems, Python Programming, DBMS, Machine Learning, Web Technologies, Software Engineering.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Stylish CNN Segmentation_simple_compose_.png">
+                <div class="layer">
+                    <h3>Image Segmentation</h3>
+                    <p>Built a Python pipeline using Mask R-CNN for real-time object segmentation with 85% accuracy on visual data.</p>
+                    <a href="https://github.com/chakri-yadav/Image-Segmentation-project" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Sign_language_using_CNN.png">
+                <div class="layer">
+                    <h3>Sign Language Detection</h3>
+                    <p>Developed a CNN-based ASL recognition system with live webcam input, achieving 92% accuracy in letter classification.</p>
+                    <a href="https://github.com/chakri-yadav/Sign-Language-detection-using-CNN"target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Fire Detection_simple.png">
+                <div class="layer">
+                    <h3>Fire Detection System</h3>
+                    <p>Implemented a deep learning model to detect fire from video streams using CNNs and OpenCV for real-time alerting.</p>
+                    <a href="https://github.com/chakri-yadav/Fire-Detection-system-using-OPENCV"target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Heart Disease AI Insight_simple_compose.png">
+                <div class="layer">
+                    <h3>Heart Disease Prediction</h3>
+                    <p>Created a machine learning model using logistic regression and decision trees to predict heart disease risk based on clinical data.</p>
+                    <a href="https://github.com/chakri-yadav/Heart-Disease-prediction-using-Machine-Learning"target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> chakravarthinukala@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +217-790-7356</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/"target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/chakriyadav__/#"target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/chakravarthi-nukala/"target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Chakravarthi_Nukala_Software_Engineer_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+
+
+                    <p hidden>
+                        <label>Don’t fill this out if you're human:
+                            <input name="bot-field" />
+                        </label>
+                    </p>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <footer>
+            <p>Copyright &copy; Chakravarthi Nukala. All rights reserved.</p>
+        </footer>
+
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<<script>
+  const form = document.forms['contact'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', (e) => {
+    
+    setTimeout(() => {
+      msg.innerHTML = "Message sent successfully!";
+      setTimeout(() => {
+        msg.innerHTML = "";
+        form.reset();
+      }, 4000);
+    }, 500); 
+  });
+</script>
+</body>
+</html>
