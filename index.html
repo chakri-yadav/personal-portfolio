@@ -157,9 +157,7 @@
 
 
                     <p hidden>
-                        <label>Don’t fill this out if you're human:
-                            <input name="bot-field" />
-                        </label>
+                        <label>Don’t fill this out if you're human: <input name="bot-field"/> </label>
                     </p>
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
@@ -210,19 +208,16 @@
     }
 
 </script>
-<<script>
+<script>
   const form = document.forms['contact'];
   const msg = document.getElementById("msg");
 
-  form.addEventListener('submit', (e) => {
-    
+  form.addEventListener('submit', function () {
+    msg.innerHTML = "Message sent successfully!";
     setTimeout(() => {
-      msg.innerHTML = "Message sent successfully!";
-      setTimeout(() => {
-        msg.innerHTML = "";
-        form.reset();
-      }, 4000);
-    }, 500); 
+      msg.innerHTML = "";
+      form.reset();
+    }, 4000);
   });
 </script>
 </body>
