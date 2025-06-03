@@ -1,0 +1,10 @@
+class MyNumber:
+def __init__(self, value):
+Self.value=value;
+
+def  print_value(self):
+print(Self.value);
+
+obj1=MyNumber(1);
+obj1.print_value();
+
